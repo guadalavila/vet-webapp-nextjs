@@ -86,3 +86,9 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type ColorType = {
+  label: string;
+  value: string;
+  code: string;
+};

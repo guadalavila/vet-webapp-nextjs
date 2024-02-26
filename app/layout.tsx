@@ -1,3 +1,6 @@
+import { mulish } from './ui/fonts';
+import './ui/global.css';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${mulish.className} h-screen bg-gray-100`}>
+        {children}
+      </body>
     </html>
   );
 }
