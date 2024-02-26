@@ -10,8 +10,8 @@ function Card({ pet }: ICardProps) {
   return (
     <div className="w-auto rounded-xl bg-white p-4 shadow-md">
       <div className="mx-auto mb-4 h-24 w-24 justify-center  rounded-full bg-indigo-600 "></div>
-      <h2 className="text-center text-4xl font-bold text-black">{pet.name}</h2>
-      <p className="py-2 text-center  text-2xl font-bold text-gray-600">
+      <h2 className="text-center text-3xl font-bold text-black">{pet.name}</h2>
+      <p className="py-2 text-center  text-2xl font-bold text-gray-500">
         {pet.breed}
       </p>
       <div className="my-3 flex justify-center">

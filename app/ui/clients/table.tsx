@@ -6,12 +6,12 @@ import { PencilIcon, PowerIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '../button';
 
-export default async function CustomersTable({ pets }: { pets: Pet[] }) {
+export default async function ClientsTable({ pets }: { pets: Pet[] }) {
   return (
     <div className="w-full">
       <div className="flex justify-between">
-        <h1 className={` mb-8 text-xl md:text-2xl`}>Mascotas</h1>
-        <Button>Agregar Mascota</Button>
+        <h1 className={` mb-8 text-xl md:text-2xl`}>Clientes</h1>
+        <Button>Agregar Cliente</Button>
       </div>
       <Search placeholder="Buscar Mascota..." />
       <div className="mt-6 flow-root">

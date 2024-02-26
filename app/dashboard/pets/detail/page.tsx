@@ -1,5 +1,6 @@
 import { GenderPet, SpeciePet } from '@/app/lib/data/Pet';
 import Card from '@/app/ui/pets/card';
+import OwnerCard from '@/app/ui/pets/owner-card';
 import VisitCard from '@/app/ui/pets/visitsCard';
 
 function PetDetail() {
@@ -32,6 +33,7 @@ function PetDetail() {
     <div className="grid grid-cols-3 gap-4">
       <div className="">
         <Card pet={p} />
+        <OwnerCard />
       </div>
       <div className="col-span-2">
         <VisitCard />
