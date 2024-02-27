@@ -1,6 +1,11 @@
 'use client';
 
-import { UserGroupIcon, HomeIcon, UserIcon } from '@heroicons/react/24/outline';
+import {
+  UserGroupIcon,
+  HomeIcon,
+  UserIcon,
+  Cog6ToothIcon,
+} from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -12,6 +17,7 @@ const links = [
     icon: UserIcon,
   },
   { name: 'Clientes', href: '/dashboard/clients', icon: UserGroupIcon },
+  { name: 'Configuración', href: '/dashboard/setting', icon: Cog6ToothIcon },
 ];
 
 export default function NavLinks() {
