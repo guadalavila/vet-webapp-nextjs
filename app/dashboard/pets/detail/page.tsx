@@ -30,7 +30,7 @@ function PetDetail() {
     updatedAt: '2023-11-14T23:54:42.210Z',
   };
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-3 ">
       <div className="">
         <Card pet={p} />
         <OwnerCard />
