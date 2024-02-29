@@ -6,7 +6,7 @@ import { PencilIcon, PowerIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '../button';
 
-export default async function CustomersTable({ pets }: { pets: Pet[] }) {
+export default async function PetsTable({ pets }: { pets: Pet[] }) {
   return (
     <div className="w-full">
       <div className="flex justify-between">
@@ -123,10 +123,14 @@ export default async function CustomersTable({ pets }: { pets: Pet[] }) {
                       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm group-first-of-type:rounded-md group-last-of-type:rounded-md">
                         <div className="flex justify-center">
                           <Link href={'pets/detail'}>
-                            <PencilIcon className="mx-2 w-4 text-indigo-600" />
+                            <div className="mx-1 rounded-lg bg-gray-100 p-1 shadow">
+                              <PencilIcon className="w-5 text-indigo-600" />
+                            </div>
                           </Link>
                           <Link href={'/'}>
-                            <TrashIcon className="mx-2 w-4 text-indigo-600" />
+                            <div className="mx-1 rounded-lg bg-gray-100 p-1 shadow">
+                              <TrashIcon className="w-5 text-indigo-600" />
+                            </div>
                           </Link>
                         </div>
                       </td>

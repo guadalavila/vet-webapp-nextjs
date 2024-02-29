@@ -21,10 +21,16 @@ export default function Breadcrumbs({
             aria-current={breadcrumb.active}
             className={`${breadcrumb.active ? 'text-gray-900' : 'text-gray-500'} `}
           >
-            <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
-            {index < breadcrumbs.length - 1 ? (
-              <span className="mx-3 inline-block">/</span>
-            ) : null}
+            <>
+              {index < breadcrumbs.length - 1 ? (
+                <>
+                  <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
+                  <span className="mx-3 inline-block">/</span>
+                </>
+              ) : (
+                <span>{breadcrumb.label}</span>
+              )}
+            </>
           </li>
         ))}
       </ol>
