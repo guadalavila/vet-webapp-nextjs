@@ -8,10 +8,6 @@ function Dashboard() {
       active: true,
     },
   ];
-  return (
-    <div>
-      <Breadcrumbs breadcrumbs={mockData2} />
-    </div>
-  );
+  return <div></div>;
 }
 export default Dashboard;

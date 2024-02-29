@@ -1,5 +1,6 @@
 import { GenderPet, SpeciePet } from '@/app/lib/data/Pet';
-import Card from '@/app/ui/pets/card';
+import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
+import CardPet from '@/app/ui/pets/card';
 import OwnerCard from '@/app/ui/pets/owner-card';
 import VisitCard from '@/app/ui/pets/visitsCard';
 
@@ -30,13 +31,21 @@ function PetDetail() {
     updatedAt: '2023-11-14T23:54:42.210Z',
   };
   return (
-    <div className="grid grid-cols-1 gap-2 md:grid-cols-3 ">
-      <div className="">
-        <Card pet={p} />
-        <OwnerCard />
-      </div>
-      <div className="col-span-2">
-        <VisitCard />
+    <div>
+      <Breadcrumbs
+        breadcrumbs={[
+          { label: 'Mascotas', href: '/dashboard/pets', active: false },
+          { label: 'Pupi', href: '', active: true },
+        ]}
+      />
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-3 ">
+        <div className="">
+          <CardPet pet={p} />
+          <OwnerCard />
+        </div>
+        <div className="col-span-2">
+          <VisitCard />
+        </div>
       </div>
     </div>
   );

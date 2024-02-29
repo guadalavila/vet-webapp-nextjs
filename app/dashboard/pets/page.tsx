@@ -1,6 +1,6 @@
 import { GenderPet, Pet, SpeciePet } from '@/app/lib/data/Pet';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
-import CustomersTable from '@/app/ui/pets/table';
+import PetsTable from '@/app/ui/pets/table';
 
 function Pets() {
   const mockData: Pet[] = [
@@ -63,11 +63,6 @@ function Pets() {
     },
   ];
 
-  return (
-    <div>
-      <CustomersTable pets={mockData}></CustomersTable>
-      <Breadcrumbs breadcrumbs={mockData2} />
-    </div>
-  );
+  return <PetsTable pets={mockData}></PetsTable>;
 }
 export default Pets;
